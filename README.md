@@ -1,33 +1,34 @@
-Prerequisites: 
+# GeoPy
 
-IDE -> VsCode
-Python 3
+GeoPy is a Python-based geocoding utility that processes company address data from an Excel file and converts it into latitude and longitude coordinates. This can be useful for mapping, location analysis, and data enrichment workflows.
 
-Libraries needed to run the program: 
-----------------
--> Pandas
--> Request
--> Json
--> Time
-----------------
+## Features
 
-Note: Please check it carefully because this is case-sensitive.
+- Reads address data from an Excel file
+- Converts registered addresses into geographic coordinates
+- Outputs the processed results into a new Excel file
+- Simple and easy to run in a local Python environment
 
-Instructions: 
-------------------------------------------------------------------------------------------------------------------------
-The EXCEL FILE MUST CONTAIN the PLAIN headers "Registered_Address" & "Company_name" (Only)
-------------------------------------------------------------------------------------------------------------------------
-If you see this in the code => df = pd.read_excel("FILE-NAME.xlsx") [Note: It must be enclosed in the double quotes]
+## Prerequisites
 
-Step 1: Change the "FILE-NAME", replace it with the name of YOUR EXCEL FILE you want to run..
--------------------------------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------------------------
+Before running the script, make sure you have the following installed:
 
--------------------------------------------------------------------------------------------------------------------------
-# Saving File 
-If you see this in the code => df = df.to_excel("FILE-NAME.xlsx") [Note: It must be enclosed in the double quotes]
+- **Python 3**
+- **Visual Studio Code** or any Python-compatible IDE
 
-Step 2: Change the "FILE-NAME", replace it with the name of YOUR EXCEL FILE you want to save..
--------------------------------------------------------------------------------------------------------------------------
+## Required Libraries
 
-Then, you can run it by simply typing "py geo.py" in the terminal.
+This project requires the following Python libraries:
+
+- `pandas`
+- `requests`
+
+The following modules are included in Python by default, so no separate installation is needed:
+
+- `json`
+- `time`
+
+To install the required libraries, run:
+
+```bash
+pip install pandas requests
